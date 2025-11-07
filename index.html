@@ -1,1 +1,63 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cute Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home">
+    <h1>Hi, I’m [Your Name] 🌙</h1>
+    <p>GIS & Remote Sensing Enthusiast | Data Storytelling | Moon & Nature Lover</p>
+    <div class="floating-icons">
+      <span class="moon">🌙</span>
+      <span class="leaf">🌿</span>
+      <span class="moon">🌙</span>
+    </div>
+  </header>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Green Space">
+        <h3>Accessible Green Space 🌿</h3>
+        <p>Mapping urban green space accessibility with GIS.</p>
+        <button onclick="window.location.href='projects.html#green-space'">View Project</button>
+      </div>
+      <div class="project-card">
+        <img src="images/placeholder.png" alt="Moon & Tide">
+        <h3>Moon & Tide 🌊🌙</h3>
+        <p>Analyzing tidal patterns and lunar phases using satellite imagery.</p>
+        <button onclick="window.location.href='projects.html#moon-tide'">View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder Map Section -->
+  <section id="moon-tide-map">
+    <h2>Moon & Tide Slider Map (Placeholder)</h2>
+    <div id="map"></div>
+    <input type="range" id="time-slider" min="0" max="10" value="0">
+  </section>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
