@@ -1,0 +1,82 @@
+/* General */
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f8f6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navigation */
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #a3d2ca;
+  padding: 12px;
+  margin: 0;
+}
+.nav-bar ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav-bar ul li a:hover { color: #ffb6b9; }
+
+/* Hero */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #ffe0ac, #ffd6f6);
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+header p { font-size: 1.2rem; }
+
+/* Floating Icons Animation */
+.floating-icons span {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 6s infinite ease-in-out;
+}
+.floating-icons .moon { left: 10%; animation-delay: 0s; }
+.floating-icons .leaf { left: 50%; animation-delay: 2s; }
+.floating-icons .moon:last-child { left: 80%; animation-delay: 4s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+}
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.project-card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+/* Map Section */
+#moon-tide-map { padding: 50px 20px; text-align: center; }
+#map { height: 400px; width: 90%; max-width: 800px; margin: 20px auto; border-radius: 15px; }
+#time-slider { width: 80%; max-width: 500px; margin: 20px 0; }
